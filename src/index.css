@@ -1,4 +1,6 @@
 body {
+  width: 100wh;
+  overflow-x: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -6,6 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -17,4 +24,13 @@ code {
 }
 #nactive{
   background-color: blue;
+}
+
+#example1 {
+  height: 50vh;
+  width: 50vw;
+  background:url("../images/random.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

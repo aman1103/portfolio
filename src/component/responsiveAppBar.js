@@ -88,23 +88,15 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-          >
-            LOGO
-          </Typography>
           <Box sx={{ justifyContent:'right',textTransform: 'none',flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
+              <a href='#aboutme'><Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ textTransform: 'none',my: 2, color: 'white', display: 'block' }}
               >
                 {page}
-              </Button>
+              </Button></a>
             ))}
           </Box>
         </Toolbar>
